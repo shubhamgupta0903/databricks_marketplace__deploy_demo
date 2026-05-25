@@ -1,0 +1,8 @@
+command: ["streamlit", "run", "app.py", "--server.port", "8000"]
+
+env:
+  - name: APP_NAME
+    value: "Marketplace Demo"
+
+  - name: API_KEY
+    value: "demo1234"
