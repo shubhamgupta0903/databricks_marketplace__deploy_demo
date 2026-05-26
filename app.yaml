@@ -2,7 +2,11 @@ command: ["streamlit", "run", "app.py", "--server.port", "8000"]
 
 env:
   - name: APP_NAME
-    value: "Marketplace Demo"
+    valueFrom:
+      secretScope: my-app-scope
+      secretKey: APP_NAME
 
   - name: API_KEY
-    value: "demo1234"
+    valueFrom:
+      secretScope: my-app-scope
+      secretKey: API_KEY
