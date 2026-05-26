@@ -1,0 +1,7 @@
+command: ["streamlit", "run", "app.py", "--server.port", "8000"]
+
+env:
+  - name: APP_NAME
+    valueFrom:
+      secretScope: my-app-scope
+      secretKey: APP_NAME
