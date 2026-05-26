@@ -5,8 +5,3 @@ env:
     valueFrom:
       secretScope: my-app-scope
       secretKey: APP_NAME
-
-  - name: API_KEY
-    valueFrom:
-      secretScope: my-app-scope
-      secretKey: API_KEY
